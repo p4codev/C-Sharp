@@ -45,6 +45,7 @@ namespace Aplicacion1
             Console.WriteLine("El Valor Booleano es:" + i);
 
             Console.ReadLine();
+            //Tipo de Datos
         }
     }
 }
