@@ -6,6 +6,7 @@ namespace Aplicacion1
     {
         static void Main(string[] args)
         {
+            //--------------- Tipo de Datos --------------
             Console.WriteLine("Tipo de Datos en C#");            
             
             //Tipo de Dato Short (Para Numeros Pequeños)
@@ -45,7 +46,43 @@ namespace Aplicacion1
             Console.WriteLine("El Valor Booleano es:" + i);
 
             Console.ReadLine();
-            //Tipo de Datos
+
+
+            //--------------- Operadores en C# --------------
+            Console.WriteLine("Operadores en C#");
+            int j = 10;
+            int k = 56;
+            double l = 38.95;
+
+            int suma = j + k;
+            double sumaDouble = j + l;
+            int resta = k - j;
+            int multiplicacion = j * k;
+            double division = k / l;
+            double divisionEnteros = (k * 1.0) / j; //La division entre enteros va a dar un numero entero para solucionar usamos (x * 1.0)
+            double residuo = k % j;
+
+            Console.WriteLine("La suma es: " + suma);
+            Console.WriteLine("La Suma Double es: " + sumaDouble);
+            Console.WriteLine("La Resta es: " + resta);
+            Console.WriteLine("La Multiplicacion es: " + multiplicacion);
+            Console.WriteLine("La division es: " + division );
+            Console.WriteLine("La division Enteros es: " + divisionEnteros);
+            Console.WriteLine("El Residuo es: " + residuo);
+
+            Console.ReadLine();
+
+            //--------------- Concatenacion con Cadenas en C# --------------
+            Console.WriteLine("Concatenación con en C#");
+            string cad1 = "Hola este Archivo fue elaborado por: ";
+            string cad2 = "Alexander Coral (Pacodev)";
+            string resultado = cad1 + cad2;
+            Console.WriteLine("La Cadena 1 es: " + cad1);
+            Console.WriteLine("La Cadena 2 es: " + cad2);
+            Console.WriteLine("Resultante es: " + resultado);
+
+            Console.ReadLine();
+
         }
     }
 }
