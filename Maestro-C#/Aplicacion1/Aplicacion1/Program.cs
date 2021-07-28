@@ -83,6 +83,35 @@ namespace Aplicacion1
 
             Console.ReadLine();
 
+            //--------------- Conversion de tipo de datos en C# --------------
+            Console.WriteLine("Conversion de tipo de Datos en C# \n");
+            short v0 = 56;
+            int v1 = 25;
+            double v2 = 35.26;
+            float v3 = 26.35564f;
+
+            //Convertimos de Short, Int, double, float a tipo de dato String
+            string v0T = v0.ToString();
+            string v1T = v1.ToString();
+            string v2T = v2.ToString();
+            string v3T = v3.ToString();
+            Console.WriteLine("Convertimos de datos numericos a tipo String");
+            Console.WriteLine("El valor " +v0T+" es de Tipo de dato: " + v0T.GetType());
+            Console.WriteLine("El valor "+v1T+" es de Tipo de dato: "+ v1T.GetType());
+            Console.WriteLine("El valor "+v2T+" es de Tipo de dato: " + v2T.GetType());
+            Console.WriteLine("El valor "+v3T+" es de Tipo de dato: " + v3T.GetType());
+
+            //Convertimos de dato String a datos Short, int, double, float
+            short v0N = short.Parse(v0T);
+            int v1N = int.Parse(v1T);
+            double v2N = double.Parse(v2T);
+            float v3N = float.Parse(v3T);
+            Console.WriteLine("\nConvertimos de datos String a valores numericos");
+            Console.WriteLine("El valor " + v0N + " es de tipo de dato: " + v0N.GetType());
+            Console.WriteLine("El valor " + v1N + " es de tipo de dato: " + v1N.GetType());
+            Console.WriteLine("El valor " + v2N + " es de tipo de dato: " + v2N.GetType());
+            Console.WriteLine("El valor " + v3N + " es de tipo de dato: " + v3N.GetType());
+
         }
     }
 }
