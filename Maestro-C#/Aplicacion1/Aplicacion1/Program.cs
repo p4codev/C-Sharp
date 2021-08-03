@@ -112,6 +112,38 @@ namespace Aplicacion1
             Console.WriteLine("El valor " + v2N + " es de tipo de dato: " + v2N.GetType());
             Console.WriteLine("El valor " + v3N + " es de tipo de dato: " + v3N.GetType());
 
+            //------------------------------- Start Formato de Secuencia de Cadenas -------------------------------            
+            //Secuencia de Caracteres de Escape
+            Console.WriteLine("\nSecuencia de Caracteres de Escape");
+            Console.WriteLine("Hello\nWorld");//Salto de Linea
+            Console.WriteLine("Hello\tWorld");//Tabulación
+            Console.WriteLine("Hello \"World\"");
+            Console.WriteLine("C:\\\\User\\Pacodev");
+            Console.WriteLine("\nEjemplos\n");
+            Console.WriteLine("Generating invoices for costumers \"BUUUQ S. T.\"...\n");
+            Console.WriteLine("Invoice: 1021\tComplete!");
+            Console.WriteLine("Invoice: 1022\tComplete!\n");
+            Console.WriteLine("Output Directory:");
+
+            //Literal de Cadena Textual 
+            Console.WriteLine(@"C\\User\Pacodev\
+            This is where your code goes
+                Hello World!"); //Conserva todos los espacios en blanco y los caracteres sin la nececidad de usar una secuencia de escape
+            Console.WriteLine(@"C:\Invoices");
+
+            //Carcateres de Escape Unicode
+            Console.WriteLine("\nCaracteres de Escape Unicode");
+            Console.Write("\n\u65e5\u672c\u306e\u8acb\u6c42\u66f8\u3092\u751f\u6210\u3059\u308b\u306b\u306f\uff1a\n\t");
+            Console.WriteLine(@"c:\invoices\app.exe -j");
+
+            //------------------------------- End Formato Secuencia de Cadenas -------------------------------
+
+
+
+
+
+
+
         }
     }
 }
