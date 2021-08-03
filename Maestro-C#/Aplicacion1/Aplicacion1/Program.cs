@@ -135,8 +135,16 @@ namespace Aplicacion1
             Console.WriteLine("\nCaracteres de Escape Unicode");
             Console.Write("\n\u65e5\u672c\u306e\u8acb\u6c42\u66f8\u3092\u751f\u6210\u3059\u308b\u306b\u306f\uff1a\n\t");
             Console.WriteLine(@"c:\invoices\app.exe -j");
+            //------------------------------- End Formato de Secuencia de Cadenas -------------------------------
 
-            //------------------------------- End Formato Secuencia de Cadenas -------------------------------
+            //Interpolación de Cadenas
+            Console.WriteLine("\nInterpolacion de Cadenas");
+            string firstName = "Alexander";
+            string lastName = "Coral";
+            string message = $"{firstName} {lastName}";
+            Console.WriteLine(message);
+            Console.WriteLine($"{lastName} - {firstName}");
+
 
 
 
